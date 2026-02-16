@@ -36,6 +36,28 @@ title: Home
 
 ---
 
+### 3️⃣ [The Soul of the Machine (Dialogue)](dialogue)
+**Format:** Script / Screenplay  
+**Characters:** Steve Jobs vs. Douglas Hofstadter  
+**Theme:** "Is AI a tool for the mind, or a mind itself?"  
+**Key Conflict:** Jobs' minimalism vs. Hofstadter's strange loops.
+
+[🎭 Read Dialogue →](dialogue)
+
+---
+
+### 4️⃣ [Project Cortex: Cognitive Architecture](essay)
+**Format:** Architecture Proposal (RFC)  
+**Goal:** Upgrade OpenClaw from flat-file logs to a 3-layer memory OS.  
+**Components:**
+- **Episodic**: Daily journals
+- **Semantic**: Knowledge graph (Profiles/Facts)
+- **Procedural**: Skill SOPs
+
+[🧠 Read Proposal →](essay)
+
+---
+
 ## 🔍 Methodology
 
 This research was conducted through:

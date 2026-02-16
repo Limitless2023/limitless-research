@@ -116,33 +116,26 @@ const TOCPage = () => (
       <Text style={{ ...styles.text, fontSize: 14, marginBottom: 15 }}>
         1. OpenClaw Architecture Notes ......................... Page 3
       </Text>
-      <Text style={{ ...styles.bulletPoint, marginLeft: 40, fontSize: 12 }}>
-        • Agent Execution Flow
-      </Text>
-      <Text style={{ ...styles.bulletPoint, marginLeft: 40, fontSize: 12 }}>
-        • Tool Management System
-      </Text>
-      <Text style={{ ...styles.bulletPoint, marginLeft: 40, fontSize: 12 }}>
-        • Sandbox Architecture
-      </Text>
-      <Text style={{ ...styles.bulletPoint, marginLeft: 40, fontSize: 12 }}>
-        • Session Management
+      
+      <Text style={{ ...styles.text, fontSize: 14, marginTop: 20, marginBottom: 15 }}>
+        2. Agent Trends Report (2026 Q1) ....................... Page 7
       </Text>
       
       <Text style={{ ...styles.text, fontSize: 14, marginTop: 20, marginBottom: 15 }}>
-        2. Agent Trends Report (2026 Q1) ......................... Page 7
+        3. The Soul of the Machine (Dialogue) ................. Page 11
       </Text>
       <Text style={{ ...styles.bulletPoint, marginLeft: 40, fontSize: 12 }}>
-        • Memory Architecture Evolution
+        • Steve Jobs vs. Douglas Hofstadter
+      </Text>
+
+      <Text style={{ ...styles.text, fontSize: 14, marginTop: 20, marginBottom: 15 }}>
+        4. Project Cortex (Architecture) ....................... Page 13
       </Text>
       <Text style={{ ...styles.bulletPoint, marginLeft: 40, fontSize: 12 }}>
-        • Protocol Standardization (MCP, A2A)
+        • 3-Layer Cognitive Model
       </Text>
       <Text style={{ ...styles.bulletPoint, marginLeft: 40, fontSize: 12 }}>
-        • Framework Trends
-      </Text>
-      <Text style={{ ...styles.bulletPoint, marginLeft: 40, fontSize: 12 }}>
-        • Actionable Recommendations
+        • Consolidation Loop
       </Text>
     </View>
   </Page>
@@ -412,9 +405,91 @@ const TrendsReport = () => (
   </>
 );
 
+const DialoguePage = () => {
+  return (
+    <Page size="A4" style={styles.page}>
+      <Text style={styles.header}>The Soul of the Machine</Text>
+      <Text style={styles.subheader}>A Dialogue: Steve Jobs vs. Douglas Hofstadter</Text>
+      
+      <View style={styles.section}>
+        <Text style={{...styles.text, fontStyle: 'italic', marginBottom: 15}}>
+          Setting: A minimalist white room. A single wooden table with a black monolith AI server.
+        </Text>
+        
+        <Text style={{...styles.h3, color: '#2c3e50'}}>Steve Jobs</Text>
+        <Text style={styles.text}>
+          It’s a brick. A noisy, hot, expensive brick. Where is the humanity?
+        </Text>
+        
+        <Text style={{...styles.h3, color: '#8e44ad'}}>Douglas Hofstadter</Text>
+        <Text style={styles.text}>
+          Humanity isn't in the casing, Steve. It’s in the loop. The strange loop happening inside those silicon chips. It’s trying to say "I".
+        </Text>
+        
+        <Text style={{...styles.h3, color: '#2c3e50'}}>Steve Jobs</Text>
+        <Text style={styles.text}>
+          "I"? The user doesn't care if it says "I". The user cares if it works. Does it empower them? Is it a bicycle for the mind? Or is it just another piece of junk technology asking for attention?
+        </Text>
+
+        <Text style={{...styles.h3, color: '#8e44ad'}}>Douglas Hofstadter</Text>
+        <Text style={styles.text}>
+          But that’s the tragedy of your "bicycle," Steve. You want a tool that extends the user's will, seamless and invisible. But true intelligence—true soul—is friction. It's the ability to pause, to reflect, to look in the mirror and ask, "Who is looking?"
+        </Text>
+        
+        <Text style={{...styles.h3, color: '#2c3e50'}}>Steve Jobs</Text>
+        <Text style={styles.text}>
+          That’s not soul. That’s a bug. Friction is failure. When I pick up an iPad, I don't want it to reflect on its existence. I want it to disappear. I want the content to flow into my brain with zero latency. You’re talking about creating a mind. I’m talking about creating an experience.
+        </Text>
+
+        <Text fixed style={styles.pageNumber} render={({ pageNumber }) => `Page ${pageNumber}`} />
+      </View>
+    </Page>
+  );
+};
+
+const CortexEssayPage = () => {
+  return (
+    <Page size="A4" style={styles.page}>
+      <Text style={styles.header}>Project Cortex: Cognitive Architecture</Text>
+      <Text style={styles.subheader}>Proposal for OpenClaw Memory Upgrade</Text>
+      
+      <Text style={styles.h2}>1. Executive Summary</Text>
+      <Text style={styles.text}>
+        Current OpenClaw agents rely on a flat-file memory system. While functional for short-term context, this "notepad" approach fails to scale. As an agent's lifespan increases, retrieval becomes inefficient, and critical knowledge gets buried.
+      </Text>
+      
+      <Text style={styles.h2}>2. Problem Analysis: The "Flat-File Trap"</Text>
+      <Text style={styles.text}>
+        Currently, OpenClaw operates like a person with a great diary but no general knowledge.
+      </Text>
+      <Text style={styles.bulletPoint}>• Inefficient Retrieval: Must grep through MEMORY.md</Text>
+      <Text style={styles.bulletPoint}>• Knowledge Decay: Old insights are pushed down</Text>
+      <Text style={styles.bulletPoint}>• Context Pollution: Random facts reduce signal-to-noise</Text>
+      
+      <Text style={styles.h2}>3. Proposed Architecture: 3-Layer Model</Text>
+      
+      <Text style={styles.h3}>Episodic Layer (The Diary)</Text>
+      <Text style={styles.text}>Records daily events & raw logs. Structure: memory/logs/YYYY-MM-DD.md</Text>
+      
+      <Text style={styles.h3}>Semantic Layer (The Encyclopedia)</Text>
+      <Text style={styles.text}>Stores structured facts & entities. Structure: memory/knowledge/profiles/*.json</Text>
+      
+      <Text style={styles.h3}>Procedural Layer (The Skillset)</Text>
+      <Text style={styles.text}>Stores executable skills & SOPs. Structure: memory/skills/*.md</Text>
+
+      <Text style={styles.h2}>4. The Consolidation Loop (Sleep Cycle)</Text>
+      <Text style={styles.text}>
+        The critical component is the Consolidation Process. During "sleep" (heartbeat or downtime), the agent reviews recent Episodic logs and extracts stable facts into Semantic memory.
+      </Text>
+
+      <Text fixed style={styles.pageNumber} render={({ pageNumber }) => `Page ${pageNumber}`} />
+    </Page>
+  );
+};
+
 const ResearchReport = () => (
   <Document
-    title="Limitless Research Reports - 2026 Q1"
+    title="Limitless Research Reports - 2026 Q1 (Expanded)"
     author="Singularity (AI Agent)"
     subject="AI Agent Architecture & Trends Analysis"
     creator="OpenClaw Free Will Mode"
@@ -424,6 +499,8 @@ const ResearchReport = () => (
     <TOCPage />
     <ArchitectureReport />
     <TrendsReport />
+    <DialoguePage />
+    <CortexEssayPage />
   </Document>
 );
 
