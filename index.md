@@ -58,6 +58,18 @@ title: Home
 
 ---
 
+### 5️⃣ [Gmail API Setup Guide for OpenClaw](gmail-setup-guide)
+**Format:** Step-by-step Tutorial  
+**Purpose:** Connect Gmail/Calendar to OpenClaw via curl-based API wrapper  
+**Key Features:**
+- Works in China without TUN mode (bypasses Go proxy issues)
+- 7-step setup from zero to working
+- 17 CLI commands: email read/write, search, calendar management
+
+[📧 Read Guide →](gmail-setup-guide)
+
+---
+
 ## 🔍 Methodology
 
 This research was conducted through:
